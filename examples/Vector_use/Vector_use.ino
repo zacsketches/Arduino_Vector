@@ -78,5 +78,18 @@ void setup() {
 }
 
 void loop() {
+  //create and destroy a local vector many times to see if the 
+  //Arduino crashed from a memory leak.
+  Serial.println("--------------------------");
+  Vector<char*> vc;
+  vc.push_back("first");
+  vc.push_back("second");
+  vc.push_back("third");
+    for(int i = 0; i < vc.size(); ++i) {
+    Serial.print("the data at ");
+    Serial.print(i);
+    Serial.print(" is: ");
+    Serial.println( vc[i] );
+  }
 
 }
