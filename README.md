@@ -12,19 +12,21 @@ an array I decided to implement the C++ STL vector with limited functionality to
 small and the operations focused on teh basics.
 
 This first verion on my Vector has the basics you expect.
-  1. No penatly for construction
+
+  a. No penatly for construction
 
 `Vector<foo> vf;   //sizof(vf) == 0 until you push_back into it.`
 
-  2. Normal C++ push_back for appending data to the end of the vector
+  b. Normal C++ push_back for appending data to the end of the vector
 
 `vf.push_back(foo);`
 
-  3. Normal access operator
+  c. Normal access operator
 
 `vf[0] = foo2;`
 
-  4. Normal .size() method for traversing the vector
+  d. Normal .size() method for traversing the vector
+
 ````
     for(int i=0; i<vf.size(); ++i) {
       Serial.print("foo is: ");
