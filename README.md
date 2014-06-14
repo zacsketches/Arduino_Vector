@@ -42,4 +42,4 @@ Installation
 1. From the command line 'cd' into the Arduino/libraries folder.
 2. Enter 'git clone http://github.com/zacsketches/Arduino_Vector.git'
 3. This will clone the library into your Arduino libraries.
-4. Restart the Arduino IDE.  Click on examples and you will see Filter library and the moving_average example.
+4. Restart the Arduino IDE.  Click on examples and you will see the Vector library and the Vector_use example.
