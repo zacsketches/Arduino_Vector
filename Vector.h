@@ -77,6 +77,9 @@ class Vector {
 	
 public:
 	Vector() : sz(0), elem(0), space(0) {}
+	Vector(const int s) : sz(0) {
+		reserve(s);
+	}
 	
 	Vector& operator=(const Vector&);	//copy assignment
 	

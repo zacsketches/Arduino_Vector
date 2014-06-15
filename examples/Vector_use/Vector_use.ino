@@ -75,11 +75,23 @@ void setup() {
     Serial.print(" is: ");
     Serial.println( vp[i]->name() );
   }
+
+	//set size at construction
+	Serial.println("-------------------------------");
+	Vector<int> v_sized(3);
+	Serial.print("size of the space constructed vector is: ");
+	Serial.println(v_sized.size() );
+	Serial.print("Capacity of the space constructed vector is: ");
+	Serial.println(v_sized.capacity() );
+
 }
 
 void loop() {
   //create and destroy a local vector many times to see if the 
-  //Arduino crashed from a memory leak.
+  //Arduino crashes...which it does.
+  //I believe this crash is from segmentation, but I have not 
+  //done any checks to verify this.
+
   Serial.println("--------------------------");
   Vector<char*> vc;
   vc.push_back("first");
