@@ -32,7 +32,7 @@
 #ifndef VECTOR_H
 #define VECTOR_H JUN_2014
 
-#include <arduino.h>
+#include <Arduino.h>
 
 //as far as I can tell placement new is not included with AVR or arduino.h
 template<typename T>
