@@ -5,11 +5,12 @@ Lightweight implementation of the STL vector for Arduino
 
 Dynamic memory management on a microcontroller can lead to overflows if not managed carefully.
 
-###But...
+### But...
+
 I've wanted to use a vector to store a limited number of objects like pointers to different sensors
 on my robot or a list of 10 control options to manuever based off the sonar's data.  Instead of using
 an array I decided to implement the C++ STL vector with limited functionality to keep the code size 
-small and the operations focused on teh basics.
+small and the operations focused on the basics.
 
 This first verion on my Vector has the basics you expect.
 
@@ -34,7 +35,7 @@ This first verion on my Vector has the basics you expect.
     }
 ````    
 Behind the scenes vector acquires free store memory and releases it using the same mechanisms as the
-STL containter.
+STL container.
 
 Installation
 ==============
